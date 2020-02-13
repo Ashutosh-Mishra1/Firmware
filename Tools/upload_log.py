@@ -16,8 +16,8 @@ import sys
 
 try:
     import requests
-except ImportError as e:
-    print("Failed to import requests: " + e)
+except ImportError:
+    print("Failed to import requests")
     print("")
     print("You may need to install it using:")
     print("    pip3 install --user requests")
